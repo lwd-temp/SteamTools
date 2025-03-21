@@ -213,27 +213,23 @@
                                 Binding="{Binding PingValue}"
                                 ComparisonCondition="GreaterThan"
                                 Value="120">
-                                <ia:ChangePropertyAction
-                                    PropertyName="Fill"
-                                    TargetObject="PingEllipse"
-                                    Value="#FF4F58" />
-                                <ia:ChangePropertyAction
-                                    PropertyName="Foreground"
-                                    TargetObject="PingText"
-                                    Value="#FF4F58" />
+                                <ia:ChangePropertyAction PropertyName="Fill" TargetObject="PingEllipse">
+                                    <SolidColorBrush Color="#FF4F58" />
+                                </ia:ChangePropertyAction>
+                                <ia:ChangePropertyAction PropertyName="Foreground" TargetObject="PingText">
+                                    <SolidColorBrush Color="#FF4F58" />
+                                </ia:ChangePropertyAction>
                             </ia:DataTriggerBehavior>
                             <ia:DataTriggerBehavior
                                 Binding="{Binding PingValue}"
                                 ComparisonCondition="LessThanOrEqual"
                                 Value="120">
-                                <ia:ChangePropertyAction
-                                    PropertyName="Fill"
-                                    TargetObject="PingEllipse"
-                                    Value="#47A42B" />
-                                <ia:ChangePropertyAction
-                                    PropertyName="Foreground"
-                                    TargetObject="PingText"
-                                    Value="#47A42B" />
+                                <ia:ChangePropertyAction PropertyName="Fill" TargetObject="PingEllipse">
+                                    <SolidColorBrush Color="#47A42B" />
+                                </ia:ChangePropertyAction>
+                                <ia:ChangePropertyAction PropertyName="Foreground" TargetObject="PingText">
+                                    <SolidColorBrush Color="#47A42B" />
+                                </ia:ChangePropertyAction>
                             </ia:DataTriggerBehavior>
                         </i:Interaction.Behaviors>
                         <TextBlock
